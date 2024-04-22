@@ -1,9 +1,10 @@
+// src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Import Routes
 import VideoPlayer from './VideoPlayer';
 import StGeorgesFlag from './StGeorgesFlag.jpg';
 import AnotherImage from './HoughtonEnrichment.png';
-import { MdHome, MdHistory, MdInfo } from 'react-icons/md'; // Import Material Icons
 import Lottie from 'lottie-react';
 import animationData from './Animation.json'; 
 
@@ -33,6 +34,8 @@ function AdditionalInfo() {
     <div>
       <h2>*This mobile app is sponsored and funded by the Houghton Enrichment Society </h2>
       <img src={AnotherImage} alt="St George's Day Celebration" style={{ width: '50%', maxWidth: '600px' }} />
+
+
       {/* Add your additional info content here */}
     </div>
   );
@@ -50,9 +53,9 @@ function App() {
 
         <nav style={{ position: 'fixed', bottom: 0, width: '100%', backgroundColor: '#f0f0f0', textAlign: 'center' }}>
           <ul style={{ display: 'flex', justifyContent: 'space-around', listStyleType: 'none', padding: 0 }}>
-            <li><Link to="/"><MdHome /><br />Home</Link></li>
-            <li><Link to="/history"><MdHistory /><br />History</Link></li>
-            <li><Link to="/additional-info"><MdInfo /><br />Additional Info</Link></li>
+            <li><Link to="/"><br />Home</Link></li>
+            <li><Link to="/history"><br />History</Link></li>
+            <li><Link to="/additional-info"><br />Additional Info</Link></li>
           </ul>
         </nav>
       </div>
